@@ -11,19 +11,19 @@
 
     // on BUTTONS
     document.querySelector("#toLeft").onclick = function () {
-        rotateY -= 10;
+        rotateY -= 30;
         transformCube();
     }
     document.querySelector("#toDown").onclick = function () {
-        rotateX -= 10;
+        rotateX -= 30;
         transformCube();
     }
     document.querySelector("#toRight").onclick = function () {
-        rotateY += 10;
+        rotateY += 30;
         transformCube();
     }
     document.querySelector("#toUp").onclick = function () {
-        rotateX += 10;
+        rotateX += 30;
         transformCube();
     }
 

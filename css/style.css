@@ -28,13 +28,13 @@ h1, p {
 
 h1 {
   top: 10px;
-  left: 30px;
+  left: 20px;
   padding: 0px 10px;
 }
 
 p {
   top: 60px;
-  left: 30px;
+  left: 20px;
   padding: 0px 10px;
 }
 
@@ -52,7 +52,7 @@ p {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  left: 40px;
+  left: 30px;
   top: 112px;
   background-color: #397fe7;
   -webkit-border-radius: 7px;

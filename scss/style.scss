@@ -34,6 +34,46 @@ p {
     padding: 0px 10px;
 }
 
+.btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 40px;
+    top: 112px;    
+    background-color: #397fe7;
+    border-radius: 7px;
+    padding: 10px 0px 8px;
+    width: 80px;
+    max-width: 80px;
+    color: #fff;
+    font-size: 18px;
+    box-sizing: border-box;
+    transition: all 100ms linear;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.1);
+        background-color: #50a2ee;
+    }
+}
+
+.btn-left {
+
+}
+
+.btn-right {
+    left: 130px;
+}
+
+.btn-up {
+    left: 220px;
+}
+
+.btn-down {
+    left: 310px;
+    
+}
+
 a {
     text-decoration: none;
     color: #fff;

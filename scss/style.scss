@@ -17,6 +17,23 @@ body {
     overflow: hidden;
 }
 
+h1, p {
+    position: absolute;
+    color: #397fe7;
+}
+
+h1 {
+    top: 10px;
+    left: 30px;
+    padding: 0px 10px;
+}
+
+p {
+    top: 60px;
+    left: 30px;
+    padding: 0px 10px;
+}
+
 a {
     text-decoration: none;
     color: #fff;

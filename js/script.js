@@ -26,6 +26,12 @@
         rotateX += 30;
         transformCube();
     }
+    document.querySelector("#toClear").onclick = function () {
+        rotateX = 0;
+        rotateY = 0;
+        transformCube();
+    }
+
 
     // on KYE DOWN
     document.onkeydown = function (e) {

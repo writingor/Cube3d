@@ -36,21 +36,31 @@ p {
 
 .btns {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    // justify-content: center;
+    // align-items: center;
     position: absolute;
     left: 30px;
     top: 112px;    
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
     background-color: #397fe7;
     border-radius: 7px;
     padding: 10px 0px 8px;
     width: 80px;
     max-width: 80px;
+    margin-right: 10px;
+    margin-bottom: 10px;
     color: #fff;
     font-size: 18px;
     box-sizing: border-box;
     transition: all 100ms linear;
-    z-index: 1;
     cursor: pointer;
     &:hover {
         transform: scale(1.1);
@@ -58,21 +68,11 @@ p {
     }
 }
 
-.btn-left {
-
-}
-
-.btn-right {
-    left: 120px;
-}
-
-.btn-up {
-    left: 210px;
-}
-
-.btn-down {
-    left: 300px;
-    
+.btn-clear {
+    background-color: #ff7598;
+    &:hover {
+        background-color: #ff92ad;
+    }
 }
 
 a {

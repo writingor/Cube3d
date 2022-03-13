@@ -43,6 +43,22 @@ p {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  position: absolute;
+  left: 30px;
+  top: 112px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 1;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
@@ -51,15 +67,14 @@ p {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
-  left: 30px;
-  top: 112px;
   background-color: #397fe7;
   -webkit-border-radius: 7px;
           border-radius: 7px;
   padding: 10px 0px 8px;
   width: 80px;
   max-width: 80px;
+  margin-right: 10px;
+  margin-bottom: 10px;
   color: #fff;
   font-size: 18px;
   -webkit-box-sizing: border-box;
@@ -67,27 +82,22 @@ p {
   -webkit-transition: all 100ms linear;
   -o-transition: all 100ms linear;
   transition: all 100ms linear;
-  z-index: 1;
   cursor: pointer;
 }
 
-.btns:hover {
+.btn:hover {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
   background-color: #50a2ee;
 }
 
-.btn-right {
-  left: 120px;
+.btn-clear {
+  background-color: #ff7598;
 }
 
-.btn-up {
-  left: 210px;
-}
-
-.btn-down {
-  left: 300px;
+.btn-clear:hover {
+  background-color: #ff92ad;
 }
 
 a {

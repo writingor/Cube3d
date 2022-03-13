@@ -42,6 +42,12 @@
     }
     
 
+    var d = //Получаем расстояния от начальной до конечной точек по обеим осям
+    {
+   	 x: touchStart.x - touchPosition.x,
+   	 y: touchStart.y - touchPosition.y
+    };
+    
     if(Math.abs(d.x) > Math.abs(d.y)) //Проверяем, движение по какой оси было длиннее
     {
    	 if(Math.abs(d.x) > sensitivity) //Проверяем, было ли движение достаточно длинным

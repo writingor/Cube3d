@@ -43,21 +43,21 @@ p {
 .title {
   -webkit-animation-name: moveLeftAndRight;
           animation-name: moveLeftAndRight;
-  -webkit-animation-delay: 1500ms;
-          animation-delay: 1500ms;
-  -webkit-animation-duration: 1700ms;
-          animation-duration: 1700ms;
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
+  -webkit-animation-duration: 2300ms;
+          animation-duration: 2300ms;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
 }
 
 .text {
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms;
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
   -webkit-animation-name: moveLeftAndRight;
           animation-name: moveLeftAndRight;
-  -webkit-animation-duration: 1500ms;
-          animation-duration: 1500ms;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
 }
@@ -114,8 +114,8 @@ p {
           animation-name: showBtns;
   -webkit-animation-delay: 0ms;
           animation-delay: 0ms;
-  -webkit-animation-duration: 3500ms;
-          animation-duration: 3500ms;
+  -webkit-animation-duration: 2000ms;
+          animation-duration: 2000ms;
   -webkit-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
 }
@@ -192,8 +192,10 @@ p {
   background-color: #ff7598;
 }
 
-.btn-clear:hover {
-  background-color: #ff92ad;
+@media (hover: hover) {
+  .btn-clear:hover {
+    background-color: #ff92ad;
+  }
 }
 
 a {
@@ -250,6 +252,60 @@ a {
   -webkit-transition: all 300ms linear;
   -o-transition: all 300ms linear;
   transition: all 300ms linear;
+  -webkit-animation-name: showCube;
+          animation-name: showCube;
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-duration: 3000ms;
+          animation-duration: 3000ms;
+}
+
+@-webkit-keyframes showCube {
+  0% {
+    -webkit-transform: rotateY(0deg) rotateX(0deg);
+            transform: rotateY(0deg) rotateX(0deg);
+  }
+  15% {
+    -webkit-transform: rotateY(36deg) rotateX(0deg);
+            transform: rotateY(36deg) rotateX(0deg);
+  }
+  30% {
+    -webkit-transform: rotateY(72deg) rotateX(72deg);
+            transform: rotateY(72deg) rotateX(72deg);
+  }
+  70% {
+    -webkit-transform: rotateY(-270deg) rotateX(-180deg);
+            transform: rotateY(-270deg) rotateX(-180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0deg) rotateX(0deg);
+            transform: rotateY(0deg) rotateX(0deg);
+  }
+}
+
+@keyframes showCube {
+  0% {
+    -webkit-transform: rotateY(0deg) rotateX(0deg);
+            transform: rotateY(0deg) rotateX(0deg);
+  }
+  15% {
+    -webkit-transform: rotateY(36deg) rotateX(0deg);
+            transform: rotateY(36deg) rotateX(0deg);
+  }
+  30% {
+    -webkit-transform: rotateY(72deg) rotateX(72deg);
+            transform: rotateY(72deg) rotateX(72deg);
+  }
+  70% {
+    -webkit-transform: rotateY(-270deg) rotateX(-180deg);
+            transform: rotateY(-270deg) rotateX(-180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0deg) rotateX(0deg);
+            transform: rotateY(0deg) rotateX(0deg);
+  }
 }
 
 .side {
@@ -260,7 +316,7 @@ a {
   text-align: center;
   line-height: 30vh;
   background-color: #397fe7;
-  opacity: 0.77;
+  opacity: 0.8;
   overflow: hidden;
 }
 

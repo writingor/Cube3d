@@ -38,15 +38,15 @@ p {
 
 .title {
     animation-name: moveLeftAndRight;
-    animation-delay: 1500ms;
-    animation-duration: 1700ms;
+    animation-delay: 0ms;
+    animation-duration: 2300ms;
     animation-iteration-count: 1;
 }
 
 .text {
-    animation-delay: 2000ms;
+    animation-delay: 1000ms;
     animation-name: moveLeftAndRight;
-    animation-duration: 1500ms;
+    animation-duration: 1000ms;
     animation-iteration-count: 1;
 }
 
@@ -79,7 +79,7 @@ p {
     z-index: 1;
     animation-name: showBtns;
     animation-delay: 0ms;
-    animation-duration: 3500ms;
+    animation-duration: 2000ms;
     animation-timing-function: ease-in;
     @media (orientation: landscape) and (max-width: 960px) {
         width: 30%;
@@ -122,9 +122,11 @@ p {
 
 .btn-clear {
     background-color: #ff7598;
-    &:hover {
-        background-color: #ff92ad;
-    }
+    @media (hover: hover) {
+        &:hover {
+            background-color: #ff92ad;
+        }
+    }  
 }
 
 a {

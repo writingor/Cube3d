@@ -27,52 +27,73 @@ h1, p {
 }
 
 h1 {
-  top: 10px;
+  top: 7px;
+  left: 20px;
+  padding: 0px 10px;
+  font-size: 36px;
+}
+
+p {
+  font-size: 14px;
+  top: 64px;
   left: 20px;
   padding: 0px 10px;
 }
 
 .title {
-  -webkit-animation-name: moveTitle;
-          animation-name: moveTitle;
-  -webkit-animation-duration: 2000ms;
-          animation-duration: 2000ms;
+  -webkit-animation-name: moveLeftAndRight;
+          animation-name: moveLeftAndRight;
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
+  -webkit-animation-duration: 1700ms;
+          animation-duration: 1700ms;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }
 
-@-webkit-keyframes moveTitle {
+.text {
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
+  -webkit-animation-name: moveLeftAndRight;
+          animation-name: moveLeftAndRight;
+  -webkit-animation-duration: 1500ms;
+          animation-duration: 1500ms;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@-webkit-keyframes moveLeftAndRight {
   0% {
     left: 20px;
   }
   25% {
     left: -30px;
+    color: #fff;
   }
   50% {
-    left: 200px;
+    left: 120px;
+    color: #ff92ad;
   }
   100% {
     left: 20px;
   }
 }
 
-@keyframes moveTitle {
+@keyframes moveLeftAndRight {
   0% {
     left: 20px;
   }
   25% {
     left: -30px;
+    color: #fff;
   }
   50% {
-    left: 200px;
+    left: 120px;
+    color: #ff92ad;
   }
   100% {
     left: 20px;
   }
-}
-
-p {
-  top: 60px;
-  left: 20px;
-  padding: 0px 10px;
 }
 
 .btns {
@@ -89,11 +110,41 @@ p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   z-index: 1;
+  -webkit-animation-name: showBtns;
+          animation-name: showBtns;
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
+  -webkit-animation-duration: 3500ms;
+          animation-duration: 3500ms;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
 }
 
 @media (orientation: landscape) and (max-width: 960px) {
   .btns {
     width: 30%;
+  }
+}
+
+@-webkit-keyframes showBtns {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes showBtns {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
 }
 
@@ -195,6 +246,42 @@ a:hover {
   -webkit-transition: all 300ms linear;
   -o-transition: all 300ms linear;
   transition: all 300ms linear;
+  -webkit-animation-name: showCube;
+          animation-name: showCube;
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+  -webkit-animation-duration: 1500ms;
+          animation-duration: 1500ms;
+}
+
+@-webkit-keyframes showCube {
+  0% {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+  }
+  77% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes showCube {
+  0% {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+  }
+  77% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 .side {

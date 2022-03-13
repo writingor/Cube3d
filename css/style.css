@@ -282,7 +282,7 @@ a:hover {
 
 @media (orientation: landscape) and (max-width: 960px) {
   .bottom {
-    -webkit-transform: rotateX(180deg) translateZ(30vh);
-            transform: rotateX(180deg) translateZ(30vh);
+    -webkit-transform: rotateX(-90deg) translateZ(30vh);
+            transform: rotateX(-90deg) translateZ(30vh);
   }
 }

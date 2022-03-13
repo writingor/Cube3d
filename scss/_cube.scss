@@ -78,6 +78,6 @@
 .bottom {
     transform: rotateX(-90deg) translateZ(15vh);
     @media (orientation: landscape) and (max-width: 960px) {
-        transform: rotateX(180deg) translateZ(30vh);
+        transform: rotateX(-90deg) translateZ(30vh);
     }
 }

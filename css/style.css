@@ -91,7 +91,7 @@ p {
   z-index: 1;
 }
 
-@media (orientation: landscape) and (max-width: 768px) {
+@media (orientation: landscape) and (max-width: 960px) {
   .btns {
     width: 30%;
   }
@@ -154,7 +154,7 @@ a:hover {
   color: #004CBE;
 }
 
-@media (orientation: landscape) and (max-width: 768px) {
+@media (orientation: landscape) and (max-width: 960px) {
   a {
     font-size: 20px;
   }
@@ -163,14 +163,23 @@ a:hover {
 /*CUBE*/
 .container {
   position: relative;
-  margin: 40vh auto 0vh;
+  margin: 30vh auto 0vh;
   width: 30vh;
   height: 30vh;
-  -webkit-perspective: 500px;
-          perspective: 500px;
+  -webkit-perspective: 680px;
+          perspective: 680px;
+  -webkit-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  transition: all 200ms linear;
 }
 
-@media (orientation: landscape) and (max-width: 768px) {
+@media (max-width: 1280px) {
+  .container {
+    margin: 37vh auto 0vh;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 960px) {
   .container {
     margin: 20vh auto 0vh 50%;
     width: 60vh;
@@ -200,7 +209,7 @@ a:hover {
   overflow: hidden;
 }
 
-@media (orientation: landscape) and (max-width: 768px) {
+@media (orientation: landscape) and (max-width: 960px) {
   .side {
     line-height: 60vh;
   }
@@ -211,7 +220,7 @@ a:hover {
           transform: translateZ(15vh);
 }
 
-@media (orientation: landscape) and (max-width: 768px) {
+@media (orientation: landscape) and (max-width: 960px) {
   .front {
     -webkit-transform: translateZ(30vh);
             transform: translateZ(30vh);
@@ -223,7 +232,7 @@ a:hover {
           transform: rotateY(180deg) translateZ(15vh);
 }
 
-@media (orientation: landscape) and (max-width: 768px) {
+@media (orientation: landscape) and (max-width: 960px) {
   .back {
     -webkit-transform: rotateY(180deg) translateZ(30vh);
             transform: rotateY(180deg) translateZ(30vh);
@@ -235,7 +244,7 @@ a:hover {
           transform: rotateY(90deg) translateZ(15vh);
 }
 
-@media (orientation: landscape) and (max-width: 768px) {
+@media (orientation: landscape) and (max-width: 960px) {
   .right {
     -webkit-transform: rotateY(90deg) translateZ(30vh);
             transform: rotateY(90deg) translateZ(30vh);
@@ -247,7 +256,7 @@ a:hover {
           transform: rotateY(-90deg) translateZ(15vh);
 }
 
-@media (orientation: landscape) and (max-width: 768px) {
+@media (orientation: landscape) and (max-width: 960px) {
   .left {
     -webkit-transform: rotateY(-90deg) translateZ(30vh);
             transform: rotateY(-90deg) translateZ(30vh);
@@ -259,7 +268,7 @@ a:hover {
           transform: rotateX(90deg) translateZ(15vh);
 }
 
-@media (orientation: landscape) and (max-width: 768px) {
+@media (orientation: landscape) and (max-width: 960px) {
   .top {
     -webkit-transform: rotateX(90deg) translateZ(30vh);
             transform: rotateX(90deg) translateZ(30vh);
@@ -271,7 +280,7 @@ a:hover {
           transform: rotateX(-90deg) translateZ(15vh);
 }
 
-@media (orientation: landscape) and (max-width: 768px) {
+@media (orientation: landscape) and (max-width: 960px) {
   .bottom {
     -webkit-transform: rotateX(180deg) translateZ(30vh);
             transform: rotateX(180deg) translateZ(30vh);

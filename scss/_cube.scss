@@ -2,11 +2,15 @@
 
 .container {
     position: relative;
-    margin: 40vh auto 0vh;
+    margin: 30vh auto 0vh;
     width: 30vh;
     height: 30vh;
-    perspective: 500px;
-    @media (orientation: landscape) and (max-width: 768px) {
+    perspective: 680px;
+    transition: all 200ms linear;
+    @media (max-width: 1280px) {
+        margin: 37vh auto 0vh;
+    }
+    @media (orientation: landscape) and (max-width: 960px) {
         margin: 20vh auto 0vh 50%;
         width: 60vh;
         height: 60vh;
@@ -31,49 +35,49 @@
     background-color: #397fe7;
     opacity: 0.77;
     overflow: hidden;
-    @media (orientation: landscape) and (max-width: 768px) {
+    @media (orientation: landscape) and (max-width: 960px) {
         line-height: 60vh;
     }
 }
 
 .front {
     transform: translateZ(15vh);
-    @media (orientation: landscape) and (max-width: 768px) {
+    @media (orientation: landscape) and (max-width: 960px) {
         transform: translateZ(30vh);
     }
 }
 
 .back {
     transform: rotateY(180deg) translateZ(15vh);
-    @media (orientation: landscape) and (max-width: 768px) {
+    @media (orientation: landscape) and (max-width: 960px) {
         transform: rotateY(180deg) translateZ(30vh);
     }
 }
 
 .right {
     transform: rotateY(90deg) translateZ(15vh);
-    @media (orientation: landscape) and (max-width: 768px) {
+    @media (orientation: landscape) and (max-width: 960px) {
         transform: rotateY(90deg) translateZ(30vh);
     }
 }
 
 .left {
     transform: rotateY(-90deg) translateZ(15vh);
-    @media (orientation: landscape) and (max-width: 768px) {
+    @media (orientation: landscape) and (max-width: 960px) {
         transform: rotateY(-90deg) translateZ(30vh);
     }
 }
 
 .top {
     transform: rotateX(90deg) translateZ(15vh);
-    @media (orientation: landscape) and (max-width: 768px) {
+    @media (orientation: landscape) and (max-width: 960px) {
         transform: rotateX(90deg) translateZ(30vh);
     }
 }
 
 .bottom {
     transform: rotateX(-90deg) translateZ(15vh);
-    @media (orientation: landscape) and (max-width: 768px) {
+    @media (orientation: landscape) and (max-width: 960px) {
         transform: rotateX(180deg) translateZ(30vh);
     }
 }

@@ -12,7 +12,25 @@
 }
 
 body {
+    height: 100vh;
     background-image: linear-gradient(to bottom, #004CBE, #112775);
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Mukta", sans-serif;
+    font-size: 37px;
+    &:hover {
+        color: #004CBE;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 23px;
+    }
+    @media screen and (max-height: 500px) {
+        font-size: 18px;
+    }
 }
 
 @import "_cube";

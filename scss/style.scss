@@ -1,0 +1,18 @@
+@font-face {
+    font-family: Mukta;
+    font-display: swap;
+    src: url("../fonts/Mukta-Bold.woff2") format("woff2"), url("../fonts/Mukta-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Mukta", sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #004CBE, #112775);
+}
+
+@import "_cube";

@@ -1,0 +1,79 @@
+@font-face {
+  font-family: Mukta;
+  font-display: swap;
+  src: url("../fonts/Mukta-Bold.woff2") format("woff2"), url("../fonts/Mukta-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Mukta", sans-serif;
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#004CBE), to(#112775));
+  background-image: -webkit-linear-gradient(top, #004CBE, #112775);
+  background-image: -o-linear-gradient(top, #004CBE, #112775);
+  background-image: linear-gradient(to bottom, #004CBE, #112775);
+}
+
+/*CUBE*/
+.container {
+  position: relative;
+  margin: 200px auto;
+  width: 400px;
+  height: 400px;
+  -webkit-perspective: 500px;
+          perspective: 500px;
+}
+
+.cube {
+  width: inherit;
+  height: inherit;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.side {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  border: 4px solid #fff;
+  font-family: "Mukta", sans-serif;
+  font-size: 46px;
+  text-align: center;
+  line-height: 400px;
+  color: #fff;
+}
+
+.front {
+  -webkit-transform: translateZ(200px);
+          transform: translateZ(200px);
+}
+
+.back {
+  -webkit-transform: rotateY(180deg) translateZ(200px);
+          transform: rotateY(180deg) translateZ(200px);
+}
+
+.right {
+  -webkit-transform: rotateY(90deg) translateZ(200px);
+          transform: rotateY(90deg) translateZ(200px);
+}
+
+.left {
+  -webkit-transform: rotateY(-90deg) translateZ(200px);
+          transform: rotateY(-90deg) translateZ(200px);
+}
+
+.top {
+  -webkit-transform: rotateX(90deg) translateZ(200px);
+          transform: rotateX(90deg) translateZ(200px);
+}
+
+.bottom {
+  -webkit-transform: rotateX(-90deg) translateZ(200px);
+          transform: rotateX(-90deg) translateZ(200px);
+}

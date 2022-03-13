@@ -50,6 +50,7 @@ p {
     font-size: 18px;
     box-sizing: border-box;
     transition: all 100ms linear;
+    z-index: 1;
     cursor: pointer;
     &:hover {
         transform: scale(1.1);

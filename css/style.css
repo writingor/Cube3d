@@ -179,11 +179,13 @@ p {
   cursor: pointer;
 }
 
-.btn:hover {
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
-  background-color: #50a2ee;
+@media (hover: hover) {
+  .btn:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    background-color: #50a2ee;
+  }
 }
 
 .btn-clear {

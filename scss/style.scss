@@ -38,13 +38,13 @@ p {
 
 .title {
     animation-name: moveLeftAndRight;
-    animation-delay: 0ms;
+    animation-delay: 9000ms;
     animation-duration: 2300ms;
     animation-iteration-count: 1;
 }
 
 .text {
-    animation-delay: 1000ms;
+    animation-delay: 10000ms;
     animation-name: moveLeftAndRight;
     animation-duration: 1000ms;
     animation-iteration-count: 1;
@@ -77,10 +77,10 @@ p {
     top: 112px;    
     box-sizing: border-box;
     z-index: 1;
-    animation-name: showBtns;
-    animation-delay: 0ms;
-    animation-duration: 2000ms;
-    animation-timing-function: ease-in;
+    // animation-name: showBtns;
+    // animation-delay: 0ms;
+    // animation-duration: 2000ms;
+    // animation-timing-function: ease-in;
     @media (orientation: landscape) and (max-width: 960px) {
         width: 30%;
     }

@@ -43,8 +43,8 @@ p {
 .title {
   -webkit-animation-name: moveLeftAndRight;
           animation-name: moveLeftAndRight;
-  -webkit-animation-delay: 0ms;
-          animation-delay: 0ms;
+  -webkit-animation-delay: 9000ms;
+          animation-delay: 9000ms;
   -webkit-animation-duration: 2300ms;
           animation-duration: 2300ms;
   -webkit-animation-iteration-count: 1;
@@ -52,8 +52,8 @@ p {
 }
 
 .text {
-  -webkit-animation-delay: 1000ms;
-          animation-delay: 1000ms;
+  -webkit-animation-delay: 10000ms;
+          animation-delay: 10000ms;
   -webkit-animation-name: moveLeftAndRight;
           animation-name: moveLeftAndRight;
   -webkit-animation-duration: 1000ms;
@@ -110,14 +110,6 @@ p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   z-index: 1;
-  -webkit-animation-name: showBtns;
-          animation-name: showBtns;
-  -webkit-animation-delay: 0ms;
-          animation-delay: 0ms;
-  -webkit-animation-duration: 2000ms;
-          animation-duration: 2000ms;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
 }
 
 @media (orientation: landscape) and (max-width: 960px) {
@@ -258,8 +250,8 @@ a {
           animation-delay: 0ms;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-  -webkit-animation-duration: 3000ms;
-          animation-duration: 3000ms;
+  -webkit-animation-duration: 1500ms;
+          animation-duration: 1500ms;
 }
 
 @-webkit-keyframes showCube {
@@ -267,17 +259,9 @@ a {
     -webkit-transform: rotateY(0deg) rotateX(0deg);
             transform: rotateY(0deg) rotateX(0deg);
   }
-  15% {
-    -webkit-transform: rotateY(36deg) rotateX(0deg);
-            transform: rotateY(36deg) rotateX(0deg);
-  }
-  30% {
-    -webkit-transform: rotateY(72deg) rotateX(72deg);
-            transform: rotateY(72deg) rotateX(72deg);
-  }
   70% {
-    -webkit-transform: rotateY(-270deg) rotateX(-180deg);
-            transform: rotateY(-270deg) rotateX(-180deg);
+    -webkit-transform: rotateY(72deg) rotateX(36deg);
+            transform: rotateY(72deg) rotateX(36deg);
   }
   100% {
     -webkit-transform: rotateY(0deg) rotateX(0deg);
@@ -290,17 +274,9 @@ a {
     -webkit-transform: rotateY(0deg) rotateX(0deg);
             transform: rotateY(0deg) rotateX(0deg);
   }
-  15% {
-    -webkit-transform: rotateY(36deg) rotateX(0deg);
-            transform: rotateY(36deg) rotateX(0deg);
-  }
-  30% {
-    -webkit-transform: rotateY(72deg) rotateX(72deg);
-            transform: rotateY(72deg) rotateX(72deg);
-  }
   70% {
-    -webkit-transform: rotateY(-270deg) rotateX(-180deg);
-            transform: rotateY(-270deg) rotateX(-180deg);
+    -webkit-transform: rotateY(72deg) rotateX(36deg);
+            transform: rotateY(72deg) rotateX(36deg);
   }
   100% {
     -webkit-transform: rotateY(0deg) rotateX(0deg);

@@ -203,8 +203,10 @@ a {
   font-size: 37px;
 }
 
-a:hover {
-  color: #004CBE;
+@media (hover: hover) {
+  a:hover {
+    color: #004CBE;
+  }
 }
 
 @media (orientation: landscape) and (max-width: 960px) {

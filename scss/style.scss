@@ -132,8 +132,10 @@ a {
     color: #fff;
     font-family: "Mukta", sans-serif;
     font-size: 37px;
-    &:hover {
-        color: #004CBE;
+    @media (hover: hover) {
+        &:hover {
+            color: #004CBE;
+        }
     }
     @media (orientation: landscape) and (max-width: 960px) {
         font-size: 20px;

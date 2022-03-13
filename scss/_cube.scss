@@ -13,6 +13,7 @@
     height: inherit;
     transform-style: preserve-3d;
     // transform: rotate3d(1, 1, 1, 45deg);
+    transition: all 300ms linear;
 }
 
 .side {

@@ -41,48 +41,7 @@
         transformCube();
     }
 
+    // TOUCH
 
-    function checkSwipe () {
-        var d = //Получаем расстояния от начальной до конечной точек по обеим осям
-        {
-            x: touchStart.x - touchPosition.x,
-            y: touchStart.y - touchPosition.y
-        };
-
-        if (Math.abs(d.x) > Math.abs(d.y)) //Проверяем, движение по какой оси было длиннее
-        {
-            if (Math.abs(d.x) > sensitivity) //Проверяем, было ли движение достаточно длинным
-            {
-                if (d.x > 0) //Если значение больше нуля, значит пользователь двигал пальцем справа налево
-                {
-                    rotateY -= 10;
-                    transformCube();
-                }
-                else //Иначе он двигал им слева направо
-                {
-                    rotateY += 10;
-                    transformCube();
-                }
-            }
-        }
-        else //Аналогичные проверки для вертикальной оси
-        {
-            if (Math.abs(d.y) > sensitivity) {
-                if (d.y > 0) //Свайп вверх
-                {
-                    rotateX += 10;
-                    transformCube();
-                }
-                else //Свайп вниз
-                {
-                    rotateX -= 10;
-                    transformCube();
-                }
-            }
-        }
-    }
-
-
-    document.querySelector("body").addEventListener("touchend", checkSwipe, false);
 
 })();

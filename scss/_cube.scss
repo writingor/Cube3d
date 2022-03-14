@@ -58,6 +58,7 @@
 
 .front {
     transform: translateZ(15vh);
+    background-color: #ff7598;
     @media (orientation: landscape) and (max-width: 960px) {
         transform: translateZ(30vh);
     }

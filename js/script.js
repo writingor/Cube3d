@@ -72,7 +72,7 @@
 
         var xDiff = xDown - xUp;
         var yDiff = yDown - yUp;
-        
+
         if (Math.abs(xDiff) > Math.abs(yDiff)) {
             if (xDiff > 0) {
                 rotateY -= 36;
@@ -92,6 +92,60 @@
         yDown = null;
     };
 
+
+    // MOUSE
+
+    //////////////////
+    // Вешаем на прикосновение функцию mouseStart
+    document.querySelector(".cube").addEventListener('mousedown', mouseStart, false);
+    // А на движение пальцем по экрану - mouseMove      
+    document.querySelector(".cube").addEventListener('mousemove', mouseMove, false);
+
+    document.querySelector(".cube").addEventListener('mouseup', mouseEnd, false);
+
+    var xMouseDown = null;
+    var yMouseDown = null;
+
+    function mouseStart(evt) {
+        xMouseDown = evt.clientX;
+        yMouseDown = evt.clientY;
+    };
+
+    function mouseEnd() {
+        xMouseDown = null;
+        yMouseDown = null;
+    };
+
+    function mouseMove(evt) {
+        if (!xMouseDown || !yMouseDown) {
+            return;
+        }
+
+        var xMouseUp = evt.clientX;
+        var yMouseUp = evt.clientY;
+
+        var xMouseDiff = xMouseDown - xMouseUp;
+        var yMouseDiff = yMouseDown - yMouseUp;
+        
+
+        if (Math.abs(xMouseDiff) > Math.abs(yMouseDiff)) {
+            if (xMouseDiff > 0) {
+                rotateY -= 36;
+            } else {
+                rotateY += 36;
+            }
+        } else {
+            if (yMouseDiff > 0) {
+                rotateX += 36;
+            } else {
+                rotateX -= 36;
+            }
+        }
+        transformCube();
+
+        xMouseDown = null;
+        yMouseDown = null;
+    };
 
 })();
 
@@ -114,9 +168,9 @@ function addWaveToBtn(e) {
     var btnRect = this.getBoundingClientRect();
 
     toStyleWave.height = toStyleWave.width = waveMaxSize + px;
-    toStyleWave.left = e.clientX - btnRect.left - (waveMaxSize/2) + px;
-    toStyleWave.top = e.clientY - btnRect.top - (waveMaxSize/2) + px;
-    
+    toStyleWave.left = e.clientX - btnRect.left - (waveMaxSize / 2) + px;
+    toStyleWave.top = e.clientY - btnRect.top - (waveMaxSize / 2) + px;
+
     wave.classList.add("wave");
     this.appendChild(wave);
 

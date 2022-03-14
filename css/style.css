@@ -359,6 +359,7 @@ a {
 .front {
   -webkit-transform: translateZ(15vh);
           transform: translateZ(15vh);
+  background-color: #ff7598;
 }
 
 @media (orientation: landscape) and (max-width: 960px) {

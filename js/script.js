@@ -94,3 +94,37 @@
 
 
 })();
+
+
+
+// WAWE INSIDE BUTTONS ON CLICK
+
+var btns = document.getElementsByClassName("btn");
+var forEachBtns = Array.prototype.forEach;
+
+forEachBtns.call(btns, function (btn) {
+    btn.addEventListener("click", addWaveToBtn);
+});
+
+function addWaveToBtn(e) {
+    var wave = document.createElement("div");
+    var waveMaxSize = Math.max(this.clientWidth, this.clientHeight);
+    var toStyleWave = wave.style;
+    var px = "px";
+    var btnRect = this.getBoundingClientRect();
+
+    toStyleWave.height = toStyleWave.width = waveMaxSize + px;
+    toStyleWave.left = e.clientX - btnRect.left - (waveMaxSize/2) + px;
+    toStyleWave.top = e.clientY - btnRect.top - (waveMaxSize/2) + px;
+    
+    wave.classList.add("wave");
+    this.appendChild(wave);
+
+    setTimeout(
+        () => {
+            this.removeChild(wave);
+        },
+        700
+    );
+}
+
